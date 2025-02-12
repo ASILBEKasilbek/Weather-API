@@ -1,5 +1,5 @@
 from django.urls import path
-from .views import WeatherAPIView
+from .views import WeatherAPIView,WeatherEmailAPIView,SubscribeAPIView
 
 urlpatterns = [
     path('weather/<str:lat>/<str:lon>/',WeatherAPIView.as_view()),
